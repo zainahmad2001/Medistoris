@@ -5,7 +5,7 @@ export const songsList = [
     artist: "Pilar Pelegri Terrado",
     //  flag: '333',
     artwork: require("../images/foto-Trementinaire.webp"),
-    url: require("../audios/Catalan_Trementinaires.mp3"),
+    url: require("../audios/Trementinairescatalan.mp3"),
     id: "7",
   },
 
@@ -35,7 +35,7 @@ export const songsList = [
     artist: "Medistoris",
     // flag: '777',
     artwork: require("../images/Mataro_foto.webp"),
-    url: require("../audios/tren_cast.mp3"),
+    url: require("../audios/trencastellano.mp3"),
     id: "10",
   },
 ];
