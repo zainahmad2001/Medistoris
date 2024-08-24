@@ -63,21 +63,13 @@ const SongPlayer = ({
   };
 
   const skipToNext = async () => {
-    console.log(
-      "current song index",
-      currentSongIndex,
-      songsList.length - 1,
-      currentIndex
-    );
     if (currentSongIndex < songsList.length - 1) {
-      console.log("in if");
       await TrackPlayer.skipToNext();
       onChange((currentSongIndex + 1) % songsList.length);
       setDisplayIndex((currentSongIndex + 1) % songsList.length);
       setCurrentSongIndex((currentSongIndex + 1) % songsList.length);
       setIsPlaying(false); // Set isPlaying to true since next song is playing
     } else {
-      console.log("in else");
       // Loop back to the first audio
       // await TrackPlayer.skip(0);
       setCurrentSongIndex(0); // Reset the current song index to the first song
@@ -132,8 +124,6 @@ const SongPlayer = ({
   useEffect(() => {
     setIsPlaying(playbackState === "playing" ? true : false);
   }, [playbackState]);
-
-  console.log("isvisibeal", isVisible);
 
   return (
     <View>

@@ -34,7 +34,6 @@ const App = () => {
     //   auth().signOut()
     // };
   }, []);
-  console.log("test");
 
   const setupPlayer = async () => {
     try {
@@ -53,11 +52,7 @@ const App = () => {
           Capability.SkipToNext,
         ],
       });
-      console.log("Configurando TrackPlayer...");
-      console.log("TrackPlayer configurado con éxito");
-    } catch (e) {
-      console.log("Error en la configuración de TrackPlayer:", e);
-    }
+    } catch (e) {}
   };
   return (
     <NavigationContainer ref={navRef}>

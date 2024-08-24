@@ -63,21 +63,13 @@ const SongPlayer2 = ({
   };
 
   const skipToNext = async () => {
-    // console.log(
-    //   "current song index",
-    //   currentSongIndex,
-    //   songsList.length - 1,
-    //   currentIndex
-    // );
     if (currentSongIndex < songsList.length - 1) {
-      // console.log("in if");
       await TrackPlayer.skipToNext();
       onChange((currentSongIndex + 1) % songsList.length);
       setDisplayIndex((currentSongIndex + 1) % songsList.length);
       setCurrentSongIndex((currentSongIndex + 1) % songsList.length);
       setIsPlaying(false); // Set isPlaying to true since next song is playing
     } else {
-      // console.log("in else");
       // Loop back to the first audio
       // await TrackPlayer.skip(0);
       setCurrentSongIndex(0); // Reset the current song index to the first song
@@ -111,9 +103,7 @@ const SongPlayer2 = ({
     async function checkEnd() {
       const strNum1 = progress.position.toString().split(".");
       const strNum2 = progress.duration.toString().split(".");
-      console.log("in finished: ", strNum1[0], strNum2[0]);
       if (strNum1[0] === strNum2[0] && currentIndex === songsList.length - 1) {
-        console.log("in if");
         await TrackPlayer.pause();
         await TrackPlayer.seekTo(0);
         await TrackPlayer.pause();
@@ -121,7 +111,6 @@ const SongPlayer2 = ({
         // await TrackPlayer.reset();
         // await TrackPlayer.add(songsList[currentIndex]);
       } else if (strNum1[0] === strNum2[0]) {
-        console.log("in else");
         setIsPlaying(false);
         await TrackPlayer.pause();
         await TrackPlayer.seekTo(0);
