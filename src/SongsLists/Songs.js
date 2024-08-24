@@ -28,7 +28,7 @@ export const songsList = [
     artist: "Medistoris",
     // flag: '777',
     artwork: require("../images/Mataro_foto.webp"),
-    url: require("../audios/tren_cast.mp3"),
+    url: require("../audios/trencastellano.mp3"),
     id: "4",
   },
   {
@@ -60,7 +60,7 @@ export const songsList = [
     artist: "Octavi Pujades",
     // flag: '333',
     artwork: require("../images/jordi_new.webp"),
-    url: require("../audios/SantJordi_cat.mp3"),
+    url: require("../audios/santjordicatalan.mp3"),
     id: "8",
   },
 
@@ -137,7 +137,7 @@ export const sliderSongs = [
     artist: "KPimarketing.es",
     flag: "333",
     artwork: require("../images/Mataro_foto.webp"),
-    url: require("../audios/tren_cast.mp3"),
+    url: require("../audios/trencastellano.mp3"),
     id: "3",
   },
   {
