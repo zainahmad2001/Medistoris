@@ -30,10 +30,7 @@ const Histories = ({ navigation }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [shouldStartPlayer, setShouldStartPlayer] = useState(true);
 
-  // console.log("state is: ", playbackState);
-
   const handlePlaybackTrackChanged = useCallback(async (data) => {
-    console.log("Histories data");
     if (data.nextTrack === undefined && data.position === data.duration) {
       await TrackPlayer.seekTo(0);
       // await TrackPlayer.play();
@@ -209,12 +206,10 @@ const Histories = ({ navigation }) => {
                 paddingBottom: 10,
               }}
               onPress={async () => {
-                console.log("on press");
                 // await TrackPlayer.pause();
                 // await TrackPlayer.skip(index);
                 //  await TrackPlayer.play();
                 setCurrentIndex(index);
-                console.log("currnet index: ", currentIndex);
                 setIsVisible(true);
               }}
               activeOpacity={1}

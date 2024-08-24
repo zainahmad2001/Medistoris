@@ -31,8 +31,6 @@ const Llegendes = ({ navigation }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [shouldStartPlayer, setShouldStartPlayer] = useState(true);
 
-  // console.log("state is: ", playbackState);
-
   const handlePlaybackTrackChanged = useCallback(async (data) => {
     if (data.nextTrack === undefined && data.position === data.duration) {
       await TrackPlayer.seekTo(0);
