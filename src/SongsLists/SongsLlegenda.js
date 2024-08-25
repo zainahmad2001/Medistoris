@@ -31,7 +31,7 @@ export const songsList = [
     artist: "Octavi Pujades",
     //  flag: '333',
     artwork: require("../images/jordi_new.webp"),
-    url: require("../audios/SantJordi_cat.mp3"),
+    url: require("../audios/santjordicatalan.mp3"),
     id: "14",
   },
 

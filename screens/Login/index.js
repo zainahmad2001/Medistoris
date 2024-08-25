@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -6,60 +6,61 @@ import {
   Pressable,
   TextInput,
   TouchableOpacity,
-} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import Checkbox from '@react-native-community/checkbox';
-import Button from '../../src/components/Button';
-import {ToastMessage} from '../../src/constants/methods';
+  Platform,
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import Ionicons from "react-native-vector-icons/Ionicons";
+import Checkbox from "@react-native-community/checkbox";
+import Button from "../../src/components/Button";
+import { ToastMessage } from "../../src/constants/methods";
 import {
   getData,
   onFacebookButtonPress,
   signIn,
   signInWithGoogle,
-} from '../../src/services/firebase';
-import COLORS from '../../src/constants/colors';
-import {width} from '../../src/constants/dimentions';
+} from "../../src/services/firebase";
+import COLORS from "../../src/constants/colors";
+import { width } from "../../src/constants/dimentions";
 
-function LoginScreen({navigation}) {
+function LoginScreen({ navigation }) {
   const [isPasswordShown, setIsPasswordShown] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   const loginMethod = async () => {
     setIsLoading(true);
     if (!email || !password) {
-      ToastMessage('Si us plau, ompliu tots els camps');
+      ToastMessage("Si us plau, ompliu tots els camps");
       setIsLoading(false);
       return;
     }
 
     const signedIN = await signIn(email, password);
-    console.log(signedIN, '-=-=-=');
+    console.log(signedIN, "-=-=-=");
     if (signedIN.user) {
-      const res = await getData('Users', signedIN?.user);
-      console.log('====================================');
+      const res = await getData("Users", signedIN?.user);
+      console.log("====================================");
       console.log(res);
-      console.log('====================================');
-      navigation.navigate('Main');
+      console.log("====================================");
+      navigation.navigate("Main");
       setIsLoading(false);
     } else {
       setIsLoading(false);
     }
   };
-  
+
   const loginWithGoogle = async () => {
     try {
       const signedIN = await signInWithGoogle();
-      console.log(signedIN, '-=-Google new sign res=-= ');
+      console.log(signedIN, "-=-Google new sign res=-= ");
       if (signedIN?.user) {
-        await getData('Users', signedIN?.user);
-        navigation.navigate('Main');
+        await getData("Users", signedIN?.user);
+        navigation.navigate("Main");
       }
     } catch (error) {
-      console.error('Error signing in :', error);
+      console.error("Error signing in :", error);
       // Handle error, show message, etc.
     }
   };
@@ -67,27 +68,27 @@ function LoginScreen({navigation}) {
   const loginWithFacebook = async () => {
     try {
       const signedIN = await onFacebookButtonPress();
-      console.log(signedIN, '-=-=FB res-=');
+      console.log(signedIN, "-=-=FB res-=");
       if (signedIN?.user) {
-        navigation.navigate('Main');
+        navigation.navigate("Main");
       }
     } catch (error) {
-        console.log("===== Fb Err",error)
+      console.log("===== Fb Err", error);
     }
-   
   };
 
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: COLORS.white}}>
-      <View style={{flex: 1, marginHorizontal: 22}}>
-        <View style={{marginVertical: 22}}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
+      <View style={{ flex: 1, marginHorizontal: 22 }}>
+        <View style={{ marginVertical: 22 }}>
           <Text
             style={{
               fontSize: 22,
-              fontWeight: 'bold',
+              fontWeight: "bold",
               marginVertical: 12,
               color: COLORS.black,
-            }}>
+            }}
+          >
             Inicia sessió
           </Text>
 
@@ -95,66 +96,70 @@ function LoginScreen({navigation}) {
             style={{
               fontSize: 16,
               color: COLORS.black,
-            }}>
+            }}
+          >
             Ens alegrem de tornar-te a veure 👋
           </Text>
         </View>
 
-        <View style={{marginBottom: 12, marginTop: 20}}>
+        <View style={{ marginBottom: 12, marginTop: 20 }}>
           <View
             style={{
-              width: '100%',
+              width: "100%",
               height: 50,
               borderColor: COLORS.black,
               borderWidth: 1,
               borderRadius: 8,
-              alignItems: 'center',
-              justifyContent: 'center',
+              alignItems: "center",
+              justifyContent: "center",
               paddingLeft: 22,
-            }}>
+            }}
+          >
             <TextInput
               placeholder="Correu Electrònic"
               placeholderTextColor={COLORS.black}
               keyboardType="email-address"
               value={email}
-              onChangeText={text => setEmail(text.toLowerCase())}
+              onChangeText={(text) => setEmail(text.toLowerCase())}
               style={{
-                width: '100%',
+                width: "100%",
               }}
             />
           </View>
         </View>
 
-        <View style={{marginBottom: 12, marginTop: 20}}>
+        <View style={{ marginBottom: 12, marginTop: 20 }}>
           <View
             style={{
-              width: '100%',
+              width: "100%",
               height: 50,
               borderColor: COLORS.black,
               borderWidth: 1,
               borderRadius: 8,
-              alignItems: 'center',
-              justifyContent: 'center',
+              alignItems: "center",
+              justifyContent: "center",
               paddingLeft: 22,
-            }}>
+            }}
+          >
             <TextInput
               placeholder="Contrasenya"
               placeholderTextColor={COLORS.black}
               secureTextEntry={!isPasswordShown}
               style={{
-                width: '100%',
+                width: "100%",
               }}
               value={password}
-              onChangeText={text => setPassword(text)}
+              onChangeText={(text) => setPassword(text)}
               onSubmitEditing={loginMethod}
             />
 
             <TouchableOpacity
               onPress={() => setIsPasswordShown(!isPasswordShown)}
               style={{
-                position: 'absolute',
+                position: "absolute",
                 right: 12,
-              }}>
+              }}
+            >
               {isPasswordShown == false ? (
                 <Ionicons name="eye-off" size={40} color={COLORS.black} />
               ) : (
@@ -182,18 +187,20 @@ function LoginScreen({navigation}) {
 
         <View
           style={{
-            flexDirection: 'row',
-            justifyContent: 'center',
+            flexDirection: "row",
+            justifyContent: "center",
             marginVertical: 22,
-          }}>
-          <Pressable onPress={() => navigation.navigate('ResetPassword')}>
+          }}
+        >
+          <Pressable onPress={() => navigation.navigate("ResetPassword")}>
             <Text
               style={{
                 fontSize: 19,
                 color: COLORS.primary,
-                fontWeight: 'bold',
+                fontWeight: "bold",
                 marginLeft: 6,
-              }}>
+              }}
+            >
               Restablir la contrasenya
             </Text>
           </Pressable>
@@ -212,10 +219,11 @@ function LoginScreen({navigation}) {
 
         <View
           style={{
-            flexDirection: 'row',
-            alignItems: 'center',
+            flexDirection: "row",
+            alignItems: "center",
             marginVertical: 20,
-          }}>
+          }}
+        >
           <View
             style={{
               flex: 1,
@@ -224,7 +232,7 @@ function LoginScreen({navigation}) {
               marginHorizontal: 10,
             }}
           />
-          <Text style={{fontSize: 14}}>O inicia sessió amb</Text>
+          <Text style={{ fontSize: 14 }}>O inicia sessió amb</Text>
           <View
             style={{
               flex: 1,
@@ -236,37 +244,49 @@ function LoginScreen({navigation}) {
         </View>
         <View
           style={{
-            flexDirection: 'row',
-            justifyContent: 'center',
-          }}>
-          <TouchableOpacity
-            onPress={() => loginWithGoogle()}
-            style={{
-              flex: 1,
-              alignItems: 'center',
-              justifyContent: 'center',
-              flexDirection: 'row',
-              height: 52,
-              borderWidth: 1,
-              borderColor: COLORS.grey,
-              marginRight: 4,
-              borderRadius: 10,
-              backgroundColor:'white'
-            }}>
-            <Image
-              source={require('../../src/images/google.webp')}
+            flexDirection: "row",
+            justifyContent: "center",
+          }}
+        >
+          {Platform.OS == "android" && (
+            <TouchableOpacity
+              onPress={() => loginWithGoogle()}
               style={{
-                height: 36,
-                width: 36,
-                marginRight: 8,
+                flex: 1,
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "row",
+                height: 52,
+                borderWidth: 1,
+                borderColor: COLORS.grey,
+                marginRight: 4,
+                borderRadius: 10,
+                backgroundColor: "white",
               }}
-              resizeMode="contain"
-            />
-            <Text style={{fontSize: 16, color: COLORS.black,marginLeft:16,fontWeight:'400'}}>Entra amb google</Text>
-          </TouchableOpacity>
+            >
+              <Image
+                source={require("../../src/images/google.webp")}
+                style={{
+                  height: 36,
+                  width: 36,
+                  marginRight: 8,
+                }}
+                resizeMode="contain"
+              />
+              <Text
+                style={{
+                  fontSize: 16,
+                  color: COLORS.black,
+                  marginLeft: 16,
+                  fontWeight: "400",
+                }}
+              >
+                Entra amb google
+              </Text>
+            </TouchableOpacity>
+          )}
 
-
-{/* 
+          {/* 
           <TouchableOpacity
             onPress={() => loginWithFacebook()}
             style={{
@@ -294,21 +314,23 @@ function LoginScreen({navigation}) {
 
         <View
           style={{
-            flexDirection: 'row',
-            justifyContent: 'center',
+            flexDirection: "row",
+            justifyContent: "center",
             marginVertical: 22,
-          }}>
-          <Text style={{fontSize: 16, color: COLORS.black}}>
+          }}
+        >
+          <Text style={{ fontSize: 16, color: COLORS.black }}>
             No tens compte
           </Text>
-          <Pressable onPress={() => navigation.navigate('SignupScreen')}>
+          <Pressable onPress={() => navigation.navigate("SignupScreen")}>
             <Text
               style={{
                 fontSize: 16,
                 color: COLORS.primary,
-                fontWeight: 'bold',
+                fontWeight: "bold",
                 marginLeft: 6,
-              }}>
+              }}
+            >
               Crea compte
             </Text>
           </Pressable>

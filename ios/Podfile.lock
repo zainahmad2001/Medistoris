@@ -596,11 +596,11 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
-  - AppAuth (1.6.2):
-    - AppAuth/Core (= 1.6.2)
-    - AppAuth/ExternalUserAgent (= 1.6.2)
-  - AppAuth/Core (1.6.2)
-  - AppAuth/ExternalUserAgent (1.6.2):
+  - AppAuth (1.7.5):
+    - AppAuth/Core (= 1.7.5)
+    - AppAuth/ExternalUserAgent (= 1.7.5)
+  - AppAuth/Core (1.7.5)
+  - AppAuth/ExternalUserAgent (1.7.5):
     - AppAuth/Core
   - BEMCheckBox (1.4.1)
   - boost (1.76.0)
@@ -610,12 +610,12 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.24):
     - BoringSSL-GRPC/Interface (= 0.0.24)
   - BoringSSL-GRPC/Interface (0.0.24)
-  - BVLinearGradient (2.7.3):
+  - BVLinearGradient (2.8.3):
     - React-Core
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
-  - FBAEMKit (16.1.3):
-    - FBSDKCoreKit_Basics (= 16.1.3)
+  - FBAEMKit (16.3.1):
+    - FBSDKCoreKit_Basics (= 16.3.1)
   - FBLazyVector (0.72.1)
   - FBReactNativeSpec (0.72.1):
     - RCT-Folly (= 2021.07.22.00)
@@ -624,18 +624,18 @@ PODS:
     - React-Core (= 0.72.1)
     - React-jsi (= 0.72.1)
     - ReactCommon/turbomodule/core (= 0.72.1)
-  - FBSDKCoreKit (16.1.3):
-    - FBAEMKit (= 16.1.3)
-    - FBSDKCoreKit_Basics (= 16.1.3)
-  - FBSDKCoreKit_Basics (16.1.3)
-  - FBSDKGamingServicesKit (16.1.3):
-    - FBSDKCoreKit (= 16.1.3)
-    - FBSDKCoreKit_Basics (= 16.1.3)
-    - FBSDKShareKit (= 16.1.3)
-  - FBSDKLoginKit (16.1.3):
-    - FBSDKCoreKit (= 16.1.3)
-  - FBSDKShareKit (16.1.3):
-    - FBSDKCoreKit (= 16.1.3)
+  - FBSDKCoreKit (16.3.1):
+    - FBAEMKit (= 16.3.1)
+    - FBSDKCoreKit_Basics (= 16.3.1)
+  - FBSDKCoreKit_Basics (16.3.1)
+  - FBSDKGamingServicesKit (16.3.1):
+    - FBSDKCoreKit (= 16.3.1)
+    - FBSDKCoreKit_Basics (= 16.3.1)
+    - FBSDKShareKit (= 16.3.1)
+  - FBSDKLoginKit (16.3.1):
+    - FBSDKCoreKit (= 16.3.1)
+  - FBSDKShareKit (16.3.1):
+    - FBSDKCoreKit (= 16.3.1)
   - Firebase/Auth (8.15.0):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 8.15.0)
@@ -731,29 +731,36 @@ PODS:
     - FlipperKit/FlipperKitNetworkPlugin
   - fmt (6.2.1)
   - glog (0.3.5)
-  - GoogleDataTransport (9.3.0):
+  - GoogleDataTransport (9.4.1):
     - GoogleUtilities/Environment (~> 7.7)
-    - nanopb (< 2.30910.0, >= 2.30908.0)
+    - nanopb (< 2.30911.0, >= 2.30908.0)
     - PromisesObjC (< 3.0, >= 1.2)
   - GoogleSignIn (7.0.0):
     - AppAuth (~> 1.5)
     - GTMAppAuth (< 3.0, >= 1.3)
     - GTMSessionFetcher/Core (< 4.0, >= 1.1)
-  - GoogleUtilities/AppDelegateSwizzler (7.12.0):
+  - GoogleUtilities/AppDelegateSwizzler (7.13.3):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (7.12.0):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Environment (7.13.3):
+    - GoogleUtilities/Privacy
     - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.12.0):
+  - GoogleUtilities/Logger (7.13.3):
     - GoogleUtilities/Environment
-  - GoogleUtilities/Network (7.12.0):
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Network (7.13.3):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Privacy
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.12.0)"
-  - GoogleUtilities/Reachability (7.12.0):
+  - "GoogleUtilities/NSData+zlib (7.13.3)":
+    - GoogleUtilities/Privacy
+  - GoogleUtilities/Privacy (7.13.3)
+  - GoogleUtilities/Reachability (7.13.3):
     - GoogleUtilities/Logger
+    - GoogleUtilities/Privacy
   - "gRPC-C++ (1.44.0)":
     - "gRPC-C++/Implementation (= 1.44.0)"
     - "gRPC-C++/Interface (= 1.44.0)"
@@ -812,7 +819,7 @@ PODS:
   - hermes-engine (0.72.1):
     - hermes-engine/Pre-built (= 0.72.1)
   - hermes-engine/Pre-built (0.72.1)
-  - leveldb-library (1.22.2)
+  - leveldb-library (1.22.5)
   - libevent (2.1.12)
   - Libuv-gRPC (0.0.10):
     - Libuv-gRPC/Implementation (= 0.0.10)
@@ -826,7 +833,7 @@ PODS:
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - OpenSSL-Universal (1.1.1100)
-  - PromisesObjC (2.3.1)
+  - PromisesObjC (2.4.0)
   - RCT-Folly (2021.07.22.00):
     - boost
     - DoubleConversion
@@ -1126,27 +1133,28 @@ PODS:
   - React-jsinspector (0.72.1)
   - React-logger (0.72.1):
     - glog
-  - react-native-fbsdk-next (12.1.2):
+  - react-native-fbsdk-next (12.2.0):
     - React-Core
-    - react-native-fbsdk-next/Core (= 12.1.2)
-    - react-native-fbsdk-next/Login (= 12.1.2)
-    - react-native-fbsdk-next/Share (= 12.1.2)
-  - react-native-fbsdk-next/Core (12.1.2):
-    - FBSDKCoreKit (~> 16.1.3)
+    - react-native-fbsdk-next/Core (= 12.2.0)
+    - react-native-fbsdk-next/Login (= 12.2.0)
+    - react-native-fbsdk-next/Share (= 12.2.0)
+  - react-native-fbsdk-next/Core (12.2.0):
+    - FBSDKCoreKit (~> 16.3.1)
     - React-Core
-  - react-native-fbsdk-next/Login (12.1.2):
-    - FBSDKLoginKit (~> 16.1.3)
+  - react-native-fbsdk-next/Login (12.2.0):
+    - FBSDKLoginKit (~> 16.3.1)
     - React-Core
-  - react-native-fbsdk-next/Share (12.1.2):
-    - FBSDKGamingServicesKit (~> 16.1.3)
-    - FBSDKShareKit (~> 16.1.3)
+  - react-native-fbsdk-next/Share (12.2.0):
+    - FBSDKGamingServicesKit (~> 16.3.1)
+    - FBSDKShareKit (~> 16.3.1)
     - React-Core
-  - react-native-safe-area-context (4.7.4):
+  - react-native-safe-area-context (4.10.9):
     - React-Core
-  - react-native-simple-toast (3.1.0):
+  - react-native-simple-toast (3.3.1):
     - React-Core
     - Toast (~> 4)
-  - react-native-slider (4.4.2):
+  - react-native-slider (4.5.2):
+    - RCT-Folly (= 2021.07.22.00)
     - React-Core
   - react-native-track-player (3.2.0):
     - React-Core
@@ -1261,7 +1269,7 @@ PODS:
     - React-jsi (= 0.72.1)
     - React-logger (= 0.72.1)
     - React-perflogger (= 0.72.1)
-  - RNCCheckbox (0.5.16):
+  - RNCCheckbox (0.5.17):
     - BEMCheckBox (~> 1.4)
     - React-Core
   - RNFBApp (14.12.0):
@@ -1275,50 +1283,31 @@ PODS:
     - Firebase/Firestore (= 8.15.0)
     - React-Core
     - RNFBApp
-  - RNGestureHandler (2.14.0):
+  - RNGestureHandler (2.18.1):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
-  - RNGoogleSignin (10.1.1):
-    - GoogleSignIn (~> 7.0)
+  - RNGoogleSignin (10.1.2):
+    - GoogleSignIn (~> 7.0.0)
     - React-Core
-  - RNReanimated (3.5.4):
-    - DoubleConversion
-    - FBLazyVector
-    - glog
-    - hermes-engine
-    - RCT-Folly
-    - RCTRequired
-    - RCTTypeSafety
-    - React-callinvoker
+  - RNReanimated (3.6.2):
+    - RCT-Folly (= 2021.07.22.00)
     - React-Core
-    - React-Core/DevSupport
-    - React-Core/RCTWebSocket
-    - React-CoreModules
-    - React-cxxreact
-    - React-hermes
-    - React-jsi
-    - React-jsiexecutor
-    - React-jsinspector
-    - React-RCTActionSheet
-    - React-RCTAnimation
-    - React-RCTAppDelegate
-    - React-RCTBlob
-    - React-RCTImage
-    - React-RCTLinking
-    - React-RCTNetwork
-    - React-RCTSettings
-    - React-RCTText
     - ReactCommon/turbomodule/core
-    - Yoga
-  - RNScreens (3.29.0):
+  - RNScreens (3.34.0):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
-  - RNVectorIcons (10.0.2):
+    - React-RCTImage
+  - RNSound (0.11.2):
+    - React-Core
+    - RNSound/Core (= 0.11.2)
+  - RNSound/Core (0.11.2):
+    - React-Core
+  - RNVectorIcons (10.1.0):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
   - SocketRocket (0.6.1)
   - SwiftAudioEx (0.15.3)
-  - Toast (4.0.0)
+  - Toast (4.1.1)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -1400,6 +1389,7 @@ DEPENDENCIES:
   - "RNGoogleSignin (from `../node_modules/@react-native-google-signin/google-signin`)"
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
+  - RNSound (from `../node_modules/react-native-sound`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -1554,6 +1544,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
+  RNSound:
+    :path: "../node_modules/react-native-sound"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
   Yoga:
@@ -1561,21 +1553,21 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   abseil: ebe5b5529fb05d93a8bdb7951607be08b7fa71bc
-  AppAuth: 3bb1d1cd9340bd09f5ed189fb00b1cc28e1e8570
+  AppAuth: 501c04eda8a8d11f179dbe8637b7a91bb7e5d2fa
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
   BoringSSL-GRPC: 3175b25143e648463a56daeaaa499c6cb86dad33
-  BVLinearGradient: fbe308a1d19a8133f69e033abc85d8008644f5e3
+  BVLinearGradient: 880f91a7854faff2df62518f0281afb1c60d49a3
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
-  FBAEMKit: af2972f39bb0f3f7c45998f435b007833c32ffb2
+  FBAEMKit: 6c7b5eb77c96861bb59e040842c6e55bf39512ce
   FBLazyVector: 55cd4593d570bd9e5e227488d637ce6a9581ce51
   FBReactNativeSpec: 799b0e1a1561699cd0e424e24fe5624da38402f0
-  FBSDKCoreKit: 19e2e18b3be578d7a51fed8fdd8c152bef0b9511
-  FBSDKCoreKit_Basics: dd9826ce3c9fd9f8cdf8dbbd0ef0a53e6c0c9e7e
-  FBSDKGamingServicesKit: 791d9b1de6da359e92da3b1ba3459f36b0aa604f
-  FBSDKLoginKit: c395c63a1a6cf4a8a1e6103fd94b8c46329ee81c
-  FBSDKShareKit: de5c291ad414ec07048ab09bae1b1b74b3ed92fe
+  FBSDKCoreKit: 5e4dd478947ab1bcc887e8cfadeae0727af1a942
+  FBSDKCoreKit_Basics: cd7b5f5d1e8868c26706917919d058999ca672c3
+  FBSDKGamingServicesKit: fb0dcf086e8ca51f5a0074908edb783dba286af0
+  FBSDKLoginKit: 572cca0bc6c90067ef197187697cb3b584310c52
+  FBSDKShareKit: d9269157b4e9620f0bc1a461c5ead35a65cede9a
   Firebase: 5f8193dff4b5b7c5d5ef72ae54bb76c08e2b841d
   FirebaseAuth: 3e73bf8abf4fbb40f8b421f361f4cc48ee57388c
   FirebaseCore: 5743c5785c074a794d35f2fff7ecc254a91e08b1
@@ -1591,20 +1583,20 @@ SPEC CHECKSUMS:
   FlipperKit: 2efad7007d6745a3f95e4034d547be637f89d3f6
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
-  GoogleDataTransport: 57c22343ab29bc686febbf7cbb13bad167c2d8fe
+  GoogleDataTransport: 6c09b596d841063d76d4288cc2d2f42cc36e1e2a
   GoogleSignIn: b232380cf495a429b8095d3178a8d5855b42e842
-  GoogleUtilities: 0759d1a57ebb953965c2dfe0ba4c82e95ccc2e34
+  GoogleUtilities: ea963c370a38a8069cc5f7ba4ca849a60b6d7d15
   "gRPC-C++": 9675f953ace2b3de7c506039d77be1f2e77a8db2
   gRPC-Core: 943e491cb0d45598b0b0eb9e910c88080369290b
   GTMAppAuth: 99fb010047ba3973b7026e45393f51f27ab965ae
   GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
   hermes-engine: 9df83855a0fd15ef8eb61694652bae636b0c466e
-  leveldb-library: f03246171cce0484482ec291f88b6d563699ee06
+  leveldb-library: e8eadf9008a61f9e1dde3978c086d2b6d9b9dc28
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   Libuv-gRPC: 55e51798e14ef436ad9bc45d12d43b77b49df378
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
-  PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
+  PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
   RCTRequired: c52ee8fb2b35c1b54031dd8e92d88ad4dba8f2ce
   RCTTypeSafety: 75fa444becadf0ebfa0a456b8c64560c7c89c7df
@@ -1620,10 +1612,10 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 184eae1ecdedc7a083194bd9ff809c93f08fd34c
   React-jsinspector: d0b5bfd1085599265f4212034321e829bdf83cc0
   React-logger: b8103c9b04e707b50cdd2b1aeb382483900cbb37
-  react-native-fbsdk-next: 9c40664b1501be29572795c2e4c8e347f39f556f
-  react-native-safe-area-context: 2cd91d532de12acdb0a9cbc8d43ac72a8e4c897c
-  react-native-simple-toast: 1059cc3b076a2abe14900d609c096d7682bf6e1e
-  react-native-slider: 33b8d190b59d4f67a541061bb91775d53d617d9d
+  react-native-fbsdk-next: fcecfa33c37ce63bcda9cd24766ee9d345463230
+  react-native-safe-area-context: ab8f4a3d8180913bd78ae75dd599c94cce3d5e9a
+  react-native-simple-toast: 1f1cc551d419bc0ab05dcb0136554006c274789d
+  react-native-slider: 593253eb5fbc6ea519290e812bd477fc6abafd5a
   react-native-track-player: 0c26d981b5097910486cbbeb6d8f5352d41be069
   React-NativeModulesApple: 4f31a812364443cee6ef768d256c594ad3b20f53
   React-perflogger: 3d501f34c8d4b10cb75f348e43591765788525ad
@@ -1642,21 +1634,22 @@ SPEC CHECKSUMS:
   React-runtimescheduler: 67707a955b9ecc628cc38bdc721fbc498910f0fd
   React-utils: 0a70ea97d4e2749f336b450c082905be1d389435
   ReactCommon: e593d19c9e271a6da4d0bd7f13b28cfeae5d164b
-  RNCCheckbox: 75255b03e604bbcc26411eb31c4cbe3e3865f538
+  RNCCheckbox: a3ca9978cb0846b981d28da4e9914bd437403d77
   RNFBApp: e4439717c23252458da2b41b81b4b475c86f90c4
   RNFBAuth: 50ac123123b27241927e639c0ac9c8af17f05aa1
   RNFBFirestore: 24c46940b96579c50bd39a72566f6d48c6165f2f
-  RNGestureHandler: 32a01c29ecc9bb0b5bf7bc0a33547f61b4dc2741
-  RNGoogleSignin: aac5c1ec73422109dec1da770247a1e410dcc620
-  RNReanimated: ab2e96c6d5591c3dfbb38a464f54c8d17fb34a87
-  RNScreens: 3c5b9f4a9dcde752466854b6109b79c0e205dad3
-  RNVectorIcons: 23b6e11af4aaf104d169b1b0afa7e5cf96c676ce
+  RNGestureHandler: 325d972e9402b427e819c950eae2b07d4c529802
+  RNGoogleSignin: 9d0ecc3bff939ccef83cb3a26b874130b06a6e81
+  RNReanimated: ce6bef77caeee09d7f022532cee0c8d9bad09c9a
+  RNScreens: 80369e822c4f123c3f076c9ea4141991c17770f9
+  RNSound: 6c156f925295bdc83e8e422e7d8b38d33bc71852
+  RNVectorIcons: bfb663f3f7b37340cd90120151b720641523dc84
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   SwiftAudioEx: 83eabba2940924fc1c0d5cb0896049921365229c
-  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  Toast: 1f5ea13423a1e6674c4abdac5be53587ae481c4e
   Yoga: 65286bb6a07edce5e4fe8c90774da977ae8fc009
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 93ddabeb0eb9c8b70133ca583fe200c34f4a04d5
+PODFILE CHECKSUM: 1347abdbb1ec18957c688f8606ac0466eb6f8777
 
-COCOAPODS: 1.14.2
+COCOAPODS: 1.15.2

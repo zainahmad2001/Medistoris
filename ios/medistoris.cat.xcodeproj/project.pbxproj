@@ -11,10 +11,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		218B4D2E67103F27DBCD9773 /* libPods-spotifyclone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C2695DFB463386697FB5EF /* libPods-spotifyclone.a */; };
-		7CEDB8737842B67BF2C9BDA8 /* libPods-spotifyclone-spotifycloneTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10879DC6BF9DCE1BF83F59FE /* libPods-spotifyclone-spotifycloneTests.a */; };
+		23B6EE36390F1304063E9E56 /* libPods-medistoris.cat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 289545E3637EF8A5569F62E6 /* libPods-medistoris.cat.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		CEE9519B2B194342002A2647 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEE9519A2B194342002A2647 /* GoogleService-Info.plist */; };
+		E3A58D842C7B63AC0001B894 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3A58D832C7B63AC0001B894 /* GoogleService-Info.plist */; };
+		FCADC83E98E1C1BE783DC99E /* libPods-medistoris.cat-medistoris.catTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 163D66861E83538B7E61DCEE /* libPods-medistoris.cat-medistoris.catTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,22 +31,26 @@
 		00E356EE1AD99517003FC87E /* medistoris.catTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medistoris.catTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* spotifycloneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = spotifycloneTests.m; sourceTree = "<group>"; };
-		10879DC6BF9DCE1BF83F59FE /* libPods-spotifyclone-spotifycloneTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-spotifyclone-spotifycloneTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D0EB1844221825C8759656 /* Pods-medistoris.cat-medistoris.catTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medistoris.cat-medistoris.catTests.debug.xcconfig"; path = "Target Support Files/Pods-medistoris.cat-medistoris.catTests/Pods-medistoris.cat-medistoris.catTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* medistoris.cat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medistoris.cat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = spotifyclone/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = spotifyclone/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = spotifyclone/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = spotifyclone/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = spotifyclone/main.m; sourceTree = "<group>"; };
+		163D66861E83538B7E61DCEE /* libPods-medistoris.cat-medistoris.catTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-medistoris.cat-medistoris.catTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		289545E3637EF8A5569F62E6 /* libPods-medistoris.cat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-medistoris.cat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		314FDE5D4E84ED8B4639803A /* Pods-medistoris.cat-medistoris.catTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medistoris.cat-medistoris.catTests.release.xcconfig"; path = "Target Support Files/Pods-medistoris.cat-medistoris.catTests/Pods-medistoris.cat-medistoris.catTests.release.xcconfig"; sourceTree = "<group>"; };
 		352D0698C99CFF3E07440E19 /* Pods-spotifyclone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spotifyclone.debug.xcconfig"; path = "Target Support Files/Pods-spotifyclone/Pods-spotifyclone.debug.xcconfig"; sourceTree = "<group>"; };
-		38C2695DFB463386697FB5EF /* libPods-spotifyclone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-spotifyclone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		522B021F0687A5050F5BB3A9 /* Pods-spotifyclone-spotifycloneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spotifyclone-spotifycloneTests.release.xcconfig"; path = "Target Support Files/Pods-spotifyclone-spotifycloneTests/Pods-spotifyclone-spotifycloneTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = spotifyclone/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A63B3907B99510C7FE82ED88 /* Pods-spotifyclone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spotifyclone.release.xcconfig"; path = "Target Support Files/Pods-spotifyclone/Pods-spotifyclone.release.xcconfig"; sourceTree = "<group>"; };
 		B14501BA001C4D58397030DD /* Pods-spotifyclone-spotifycloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spotifyclone-spotifycloneTests.debug.xcconfig"; path = "Target Support Files/Pods-spotifyclone-spotifycloneTests/Pods-spotifyclone-spotifycloneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCEDB82CBFFEFCB06AB6E13F /* Pods-medistoris.cat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medistoris.cat.release.xcconfig"; path = "Target Support Files/Pods-medistoris.cat/Pods-medistoris.cat.release.xcconfig"; sourceTree = "<group>"; };
 		CE06CD612B1ABB3600AB3529 /* spotifyclone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = spotifyclone.entitlements; path = spotifyclone/spotifyclone.entitlements; sourceTree = "<group>"; };
 		CE06CD642B1AFBCC00AB3529 /* spotifyclone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "spotifyclone-Bridging-Header.h"; sourceTree = "<group>"; };
-		CEE9519A2B194342002A2647 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E3A58D832C7B63AC0001B894 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E7778AAECABC4FE975501940 /* Pods-medistoris.cat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-medistoris.cat.debug.xcconfig"; path = "Target Support Files/Pods-medistoris.cat/Pods-medistoris.cat.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -55,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CEDB8737842B67BF2C9BDA8 /* libPods-spotifyclone-spotifycloneTests.a in Frameworks */,
+				FCADC83E98E1C1BE783DC99E /* libPods-medistoris.cat-medistoris.catTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				218B4D2E67103F27DBCD9773 /* libPods-spotifyclone.a in Frameworks */,
+				23B6EE36390F1304063E9E56 /* libPods-medistoris.cat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				38C2695DFB463386697FB5EF /* libPods-spotifyclone.a */,
-				10879DC6BF9DCE1BF83F59FE /* libPods-spotifyclone-spotifycloneTests.a */,
+				289545E3637EF8A5569F62E6 /* libPods-medistoris.cat.a */,
+				163D66861E83538B7E61DCEE /* libPods-medistoris.cat-medistoris.catTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,7 +126,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				CEE9519A2B194342002A2647 /* GoogleService-Info.plist */,
+				E3A58D832C7B63AC0001B894 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* spotifyclone */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* spotifycloneTests */,
@@ -151,6 +155,10 @@
 				A63B3907B99510C7FE82ED88 /* Pods-spotifyclone.release.xcconfig */,
 				B14501BA001C4D58397030DD /* Pods-spotifyclone-spotifycloneTests.debug.xcconfig */,
 				522B021F0687A5050F5BB3A9 /* Pods-spotifyclone-spotifycloneTests.release.xcconfig */,
+				E7778AAECABC4FE975501940 /* Pods-medistoris.cat.debug.xcconfig */,
+				BCEDB82CBFFEFCB06AB6E13F /* Pods-medistoris.cat.release.xcconfig */,
+				09D0EB1844221825C8759656 /* Pods-medistoris.cat-medistoris.catTests.debug.xcconfig */,
+				314FDE5D4E84ED8B4639803A /* Pods-medistoris.cat-medistoris.catTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -250,9 +258,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3A58D842C7B63AC0001B894 /* GoogleService-Info.plist in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				CEE9519B2B194342002A2647 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,15 +289,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-spotifyclone/Pods-spotifyclone-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-medistoris.cat/Pods-medistoris.cat-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-spotifyclone/Pods-spotifyclone-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-medistoris.cat/Pods-medistoris.cat-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-spotifyclone/Pods-spotifyclone-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-medistoris.cat/Pods-medistoris.cat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3AABC1BFE420AB7481B3813E /* [CP] Embed Pods Frameworks */ = {
@@ -298,15 +306,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-spotifyclone-spotifycloneTests/Pods-spotifyclone-spotifycloneTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-medistoris.cat-medistoris.catTests/Pods-medistoris.cat-medistoris.catTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-spotifyclone-spotifycloneTests/Pods-spotifyclone-spotifycloneTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-medistoris.cat-medistoris.catTests/Pods-medistoris.cat-medistoris.catTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-spotifyclone-spotifycloneTests/Pods-spotifyclone-spotifycloneTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-medistoris.cat-medistoris.catTests/Pods-medistoris.cat-medistoris.catTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5E16B56386E98EF5CA985020 /* [CP] Check Pods Manifest.lock */ = {
@@ -324,7 +332,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-spotifyclone-spotifycloneTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-medistoris.cat-medistoris.catTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -346,7 +354,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-spotifyclone-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-medistoris.cat-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -359,15 +367,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-spotifyclone-spotifycloneTests/Pods-spotifyclone-spotifycloneTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-medistoris.cat-medistoris.catTests/Pods-medistoris.cat-medistoris.catTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-spotifyclone-spotifycloneTests/Pods-spotifyclone-spotifycloneTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-medistoris.cat-medistoris.catTests/Pods-medistoris.cat-medistoris.catTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-spotifyclone-spotifycloneTests/Pods-spotifyclone-spotifycloneTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-medistoris.cat-medistoris.catTests/Pods-medistoris.cat-medistoris.catTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E628F48B5170F7E374BE434C /* [CP] Embed Pods Frameworks */ = {
@@ -376,15 +384,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-spotifyclone/Pods-spotifyclone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-medistoris.cat/Pods-medistoris.cat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-spotifyclone/Pods-spotifyclone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-medistoris.cat/Pods-medistoris.cat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-spotifyclone/Pods-spotifyclone-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-medistoris.cat/Pods-medistoris.cat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F2E5D2B84DDF885D461801A0 /* [CP-User] [RNFB] Core Configuration */ = {
@@ -452,7 +460,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B14501BA001C4D58397030DD /* Pods-spotifyclone-spotifycloneTests.debug.xcconfig */;
+			baseConfigurationReference = 09D0EB1844221825C8759656 /* Pods-medistoris.cat-medistoris.catTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -479,7 +487,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 522B021F0687A5050F5BB3A9 /* Pods-spotifyclone-spotifycloneTests.release.xcconfig */;
+			baseConfigurationReference = 314FDE5D4E84ED8B4639803A /* Pods-medistoris.cat-medistoris.catTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -503,13 +511,13 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 352D0698C99CFF3E07440E19 /* Pods-spotifyclone.debug.xcconfig */;
+			baseConfigurationReference = E7778AAECABC4FE975501940 /* Pods-medistoris.cat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = spotifyclone/spotifyclone.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8587N2YHBG;
+				DEVELOPMENT_TEAM = Z388MS4JJ6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = spotifyclone/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = medistoris.cat;
@@ -534,13 +542,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A63B3907B99510C7FE82ED88 /* Pods-spotifyclone.release.xcconfig */;
+			baseConfigurationReference = BCEDB82CBFFEFCB06AB6E13F /* Pods-medistoris.cat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = spotifyclone/spotifyclone.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8587N2YHBG;
+				DEVELOPMENT_TEAM = Z388MS4JJ6;
 				INFOPLIST_FILE = spotifyclone/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = medistoris.cat;
 				LD_RUNPATH_SEARCH_PATHS = (
